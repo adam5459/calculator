@@ -2,9 +2,8 @@ from avg import Avg
 import sys
 from prec import Prec
 from calc import Calc
-
 def checkDefaultCommands():
-    print("click enter to start")
+    print("please click enter to start")
     cmd = input("-->")
     compete = False
     while not compete:
@@ -19,8 +18,7 @@ def checkDefaultCommands():
         elif cmd == "prec":
             Prec()
             compete = True
-        elif cmd == 'help':
-            help()
+        
         elif cmd == "quit":
             sys.exit()
         else:
@@ -39,7 +37,6 @@ def help():
         avg = open average calculator 
         calc = open calculator
         prec = open precentage calculator 
-        help = open this text again
         quit = quit
     *************************************
         

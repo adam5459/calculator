@@ -6,7 +6,7 @@ def Avg():
             numOfAvgs = int(input('\n Please input the number of values \n in your average.\n -> '))
             cont = True
         except ValueError :
-            print("please input a int")
+            print("please input a float/integer")
             continue
 
     numbers = []
@@ -14,11 +14,11 @@ def Avg():
         cont = False
         while not cont:
             try:
-                num = int(input(str(x+1) + ' number. ->  '))
+                num = float(input(str(x+1) + ' number. ->  '))
                 numbers.append(num)
                 cont = True
             except ValueError:
-                print("please use an integer")
+                print("please use an integer/float")
                 continue
         
     total = 0

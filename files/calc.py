@@ -17,7 +17,7 @@ def Calc():
         try:
             first_inp = float(input("please input your first number. ->  "))
             symbol = str(input("please input your action. ->   "))
-            second_inp = int(input("please input your second number. ->  "))
+            second_inp = float(input("please input your second number. ->  "))
         except ValueError:
             print("------------Please input a valid command/number---------")
             continue

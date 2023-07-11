@@ -4,11 +4,11 @@ def Prec():
         www = False
         while not www:
             try:
-                x = int(input("x = ->   "))
-                y = int(input("y = ->   "))
+                x = float(input("x = ->   "))
+                y = float(input("y = ->   "))
                 www = True
             except ValueError:
-                print("\nplease enter an integer\n")
+                print("\nplease enter an integer or float\n")
                 continue
         xx = x/100
         ans = xx * y
@@ -22,11 +22,11 @@ def Prec():
         www = False
         while not www:
             try:
-                x = int(input("x = ->   "))
-                y = int(input("y = ->   "))
+                x = float(input("x = ->   "))
+                y = float(input("y = ->   "))
                 www = True
             except ValueError:
-                print("\nplease enter an integer\n")
+                print("\nplease enter an integer or float\n")
                 continue
         ans = 100 * float(x)/float(y)
         return """
